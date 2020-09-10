@@ -18,6 +18,14 @@ let rawData = fs.readFileSync(__dirname + "/db/db.json");
 let dbJSON = JSON.parse(rawData);
 console.log(dbJSON);
 
+//Function to set IDs for each individual note
+const notesId = () => {
+  for (let i = 0; i < dbJSON.length; i++) {
+    dbJSON[i].id = i;
+  }
+}
+
+
 // Route for index.js
 app.get("/assets/js/index.js", function(require, results) {
   results.sendFile(path.join(__dirname, "/public/assets/js/index.js"));
@@ -43,10 +51,11 @@ app.get("api/notes", function(require, results){
 app.post("/api/notes", function(results, require){
   let newNotes = require.body
   dbJSON.push(newNotes);
+  results.json(newNotes);
+  notesId();
 
-
-  fs.writeFile(__dirname + "/db/db.json", JSON.stringify(dbJSON));
-  return results.json(dbJSON);
+  fs.writeFileSync(path.resolve(__dirname + "/db/db.json", JSON.stringify(dbJSON)));
+  results.json(newNotes);
 });
 
 //route for index.html

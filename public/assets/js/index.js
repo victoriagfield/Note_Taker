@@ -74,6 +74,7 @@ const handleNoteDelete = function (event) {
   }
 
   deleteNote(note.id).then(() => {
+    console.log("test"); 
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -103,8 +104,9 @@ const handleRenderSaveBtn = function () {
 
 // Render's the list of note titles
 const renderNoteList = (notes) => {
+ 
   $noteList.empty();
-
+ 
   const noteListItems = [];
 
   // Returns jquery object for li with given text and delete button
