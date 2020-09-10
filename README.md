@@ -39,7 +39,9 @@ https://murmuring-castle-71745.herokuapp.com/
    
    ## Images:
 
-
+![note_taker1](https://user-images.githubusercontent.com/66035385/92776819-9bda9600-f36d-11ea-8d1c-dce995ab39d7.jpg)
+![note_taker2](https://user-images.githubusercontent.com/66035385/92776820-9bda9600-f36d-11ea-99c6-220699ced1eb.jpg)
+![note_taker3](https://user-images.githubusercontent.com/66035385/92776822-9bda9600-f36d-11ea-8aaf-0dbad2b7a530.jpg)
 
 
    <hr>
@@ -51,7 +53,7 @@ https://murmuring-castle-71745.herokuapp.com/
    <hr>
 
    ## Test: 
- 
+ ![Note_Taker](https://user-images.githubusercontent.com/66035385/92776823-9c732c80-f36d-11ea-8f8d-611a5b0230f5.gif)
 
 
 
