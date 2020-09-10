@@ -33,7 +33,12 @@ https://murmuring-castle-71745.herokuapp.com/
   •https://nodejs.org/api/fs.html <br>
   •https://stackabuse.com/reading-and-writing-json-files-with-node-js/ <br>
   •https://expressjs.com/en/guide/routing.html <br>
-  •https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+  •https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON<br>
+  #### Technologies Used:<br>
+  •Techniques/Technologies Used<br>
+  •Javascript<br>
+  •NodeJS<br>
+  •Node Packages: Express/ FS<br>
    
    <hr>
    
