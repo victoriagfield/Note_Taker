@@ -37,7 +37,7 @@ app.get("/assets/css/styles.css", function(require, results) {
 });
 
 //api route for notes page
-app.get("api/notes", function(require, results){
+app.get("/api/notes", function(require, results){
   results.end(JSON.stringify(dbJSON));
 });
 
