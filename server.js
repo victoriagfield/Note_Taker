@@ -22,7 +22,7 @@ console.log(dbJSON);
 
 //Function to set IDs for each individual note
 const notesID = () => {
-  for (let i = 0; i < dbJSON.length; i++) {
+  for (let i = 1; i < dbJSON.length; i++) {
     dbJSON[i].id = i;
   }
 }
