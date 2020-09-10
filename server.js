@@ -58,9 +58,9 @@ app.post("/api/notes", function(results, require){
   results.json(newNotes);
 });
 
-//route for index.html
-app.get("/index", function(require, results) {
-  results.sendFile(path.join(__dirname + "/public/index.html"));
+//route for html
+app.get("/notes", function(require, results) {
+  results.sendFile(path.join(__dirname + "/public/notes.html"));
 });
 
 // If no matching route is found default to home
