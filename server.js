@@ -36,11 +36,7 @@ app.get("/assets/css/styles.css", function(require, results) {
   results.sendFile(path.join(__dirname, "/public/assets/css/styles.css"));
 });
 
-//route for notes page
-app.get("/notes", function(require, results){
-  results.sendFile(path.join(__dirname, "/public/notes.html" ));
-});
-
+//api route for notes page
 app.get("api/notes", function(require, results){
   results.end(JSON.stringify(dbJSON));
 });
